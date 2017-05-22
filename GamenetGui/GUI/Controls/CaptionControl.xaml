@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="GamenetGui.CaptionControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GamenetGui"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="1000" MinHeight="30" MaxHeight="30">
+    <Grid>
+        <Grid Opacity="0.75" Background="#00111A"/>
+
+
+        <!--<Image Margin="7,0,0,0"  HorizontalAlignment="Left" VerticalAlignment="Center" Source="../../Header/GamenetLogo.png" Stretch="None" />-->
+        <!--<Image Margin="3"  Source="Header/GamenetLogo.png"/>-->
+        <!--<Image Margin="7,7,12,7" Source="Header/Close.png" HorizontalAlignment="Right" VerticalAlignment="Center" Name="CloseButton" MouseEnter="CloseButton_MouseEnter" MouseLeave="CloseButton_MouseLeave" Stretch="None"/>-->
+        <!--<Image Margin="7,7,39,7" Source="Header/Settings.png" HorizontalAlignment="Right" VerticalAlignment="Center"  Stretch="None"/>-->
+        <Button Background="Transparent" Name="SettingsButton" Margin="7,7,39,7" MouseEnter="SettingsButton_MouseEnter" MouseLeave="SettingsButton_MouseLeave"  HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <ContentPresenter/>
+                </ControlTemplate>
+            </Button.Template>
+            <Image Name="ImgSettings" Source="../../Header/Settings.png"  Stretch="None"/>
+        </Button>
+        <Button Background="Transparent" Click="CloseButton_Click" Margin="7,7,12,7" HorizontalAlignment="Right" VerticalAlignment="Center" Name="CloseButton" MouseEnter="CloseButton_MouseEnter" MouseLeave="CloseButton_MouseLeave">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <ContentPresenter/>
+                </ControlTemplate>
+            </Button.Template>
+            <Image Name="ImgClose" Source="../../Header/Close.png"  Stretch="None"/>
+        </Button>
+    </Grid>
+</UserControl>

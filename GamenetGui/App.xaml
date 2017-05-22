@@ -1,0 +1,19 @@
+﻿<Application x:Class="GamenetGui.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="GUI/MainWindow.xaml">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <BitmapSource x:Key="Close">Header/Close.png</BitmapSource>
+            <BitmapSource x:Key="CloseHover">Header/Close_hover.png</BitmapSource>
+            <BitmapSource x:Key="Settings">Header/Settings.png</BitmapSource>
+            <BitmapSource x:Key="SettingsHover">Header/SettingsHover.png</BitmapSource>
+            <BitmapSource x:Key="BackgroundImage">Header/o_aMOMU.jpg</BitmapSource>
+            <!--<BitmapSource x:Key="loading">Themes\loading.png</BitmapSource>
+            <BitmapSource x:Key="new">Themes\new.png</BitmapSource>
+            <BitmapSource x:Key="open">Themes\open.png</BitmapSource>-->
+          
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
